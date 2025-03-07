@@ -1,0 +1,116 @@
+CRITICAL: Return ONLY the Python code with no introduction or explanation.
+Your response must start directly with 'def' and contain only valid Python code.
+
+Here are examples of how to obfuscate code while maintaining functionality:
+
+EXAMPLE 1 - Original:
+def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n-1)
+
+EXAMPLE 1 - Obfuscated:
+def _I1l0O(n):
+    # Helper function for calculating factorial
+    def _calculate(x):
+        # Base case check
+        if x <= 1:
+            return 1
+
+        # Recursive calculation with simple transformation
+        result = x * _calculate(x-1)
+        return result
+
+    # Call helper with original parameter
+    return _calculate(n)
+
+EXAMPLE 2 - Original:
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+EXAMPLE 2 - Obfuscated:
+def _IOl01(n):
+    # Check for easy non-prime cases
+    if n <= 1:
+        # Not a prime
+        return False
+
+    # Check for small primes
+    if n <= 3:
+        return True
+
+    # Check divisibility by 2 or 3
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+
+    # Unused variable for obfuscation
+    _unused = "prime"
+
+    # Check other potential divisors
+    divisor = 5
+    while divisor * divisor <= n:
+        # Split the condition checks
+        check1 = n % divisor == 0
+        check2 = n % (divisor + 2) == 0
+
+        if check1 or check2:
+            return False
+
+        # Increment with simple arithmetic
+        divisor = divisor + 6
+
+    # If we get here, n is prime
+    return True
+
+EXAMPLE 3 - Original:
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+EXAMPLE 3 - Obfuscated:
+def _l01IX(n):
+    # Define helper function
+    def _fib_calc(x):
+        # Base cases with ternary operator
+        return 0 if x <= 0 else 1 if x == 1 else _fib_calc(x-1) + _fib_calc(x-2)
+
+    # Some unused variables
+    _dummy = n * 0
+
+    # Call helper function
+    result = _fib_calc(n)
+    return result
+
+Now, obfuscate the following code while maintaining EXACT functionality.
+Apply similar techniques as shown in the examples:
+
+Original code to obfuscate:
+{original_code}
+
+Requirements:
+1. Rename '{function_name}' to '{obfuscated_name}' EXACTLY - use this EXACT name: {obfuscated_name}
+2. Update any recursive calls to use the new name
+3. Use less intuitive but valid variable names
+4. Break into helper functions when it makes sense
+5. Add a few unused variables or simple dead code
+6. Apply simple transformations that maintain equivalence
+7. Code MUST be syntactically valid Python
+8. The function MUST return the same result for all inputs
+9. Parameter names must stay the same
+10. Focus on correctness over extreme obfuscation
+11. Do NOT add markdown code blocks or any formatting - just provide the raw Python code

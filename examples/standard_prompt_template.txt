@@ -1,0 +1,38 @@
+CRITICAL: Return ONLY the Python code with no introduction or explanation.
+Your response must start directly with 'def' and contain only valid Python code.
+
+Apply these obfuscation techniques while maintaining EXACT functionality:
+
+1. Function Transformation:
+   - Rename '{function_name}' to '{obfuscated_name}'
+   - Update recursive calls to use new name
+   - Break the function into nested helpers if appropriate
+
+2. Variable Obfuscation:
+   - Use less intuitive but still valid names
+   - Add a few unused variables
+   - Use similar-looking characters (I, l, O, 0, 1) for confusion
+
+3. Control Flow Obfuscation (moderate):
+   - Use ternary expressions instead of simple if/else where appropriate
+   - Add easily predictable conditions
+   - Convert loops to recursive calls or vice versa if suitable
+
+4. Mathematical Transformations (simple):
+   - Split operations into multiple steps
+   - Use equivalent but slightly more complex expressions
+   - Add redundant calculations that cancel out
+
+5. Dead Code (only 1-2):
+   - Add some unused variables
+   - Add one unused helper function
+   - Include minimal dead code that doesn't impact execution flow
+
+IMPORTANT CONSTRAINTS:
+- Code MUST be syntactically valid Python
+- The function MUST return the EXACT same result for all inputs
+- Parameter names must stay the same
+- Keep it simple - focus on correctness over complexity
+
+ORIGINAL CODE:
+{original_code}

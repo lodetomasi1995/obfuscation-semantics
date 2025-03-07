@@ -1,0 +1,10 @@
+{
+    "models": ["claude", "gemini", "gpt-4"],
+    "approaches": ["standard", "few-shot"],
+    "trials": 5,
+    "functions": ["factorial", "fibonacci", "is_prime", "bubble_sort", "binary_search", "str_reverse"],
+    "output_dir": "results",
+    "anthropic_api_key": "",
+    "gemini_api_key": "",
+    "openai_api_key": ""
+}

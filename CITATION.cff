@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: De Tomasi
+    given-names: Lorenzo
+    affiliation: "University of L'Aquila"
+    email: lorenzo.detomasi@graduate.univaq.it
+  - family-names: Di Sipio
+    given-names: Claudio
+    affiliation: "University of L'Aquila"
+    email: claudio.disipio@univaq.it
+  - family-names: Di Marco
+    given-names: Antinisca
+    affiliation: "University of L'Aquila"
+    email: antinisca.dimarco@univaq.it
+  - family-names: Nguyen
+    given-names: Phuong T.
+    affiliation: "University of L'Aquila"
+    email: phuong.nguyen@univaq.it
+title: "Obfuscation Semantics: Evaluating LLM-Driven Code Transformation with Semantic Elasticity"
+version: 1.0.0
+date-released: 2025-01-15
+url: "https://github.com/lorenzodetomasi/obfuscation-semantics"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: De Tomasi
+      given-names: Lorenzo
+      affiliation: "University of L'Aquila"
+      email: lorenzo.detomasi@graduate.univaq.it
+    - family-names: Di Sipio
+      given-names: Claudio
+      affiliation: "University of L'Aquila"
+      email: claudio.disipio@univaq.it
+    - family-names: Di Marco
+      given-names: Antinisca
+      affiliation: "University of L'Aquila"
+      email: antinisca.dimarco@univaq.it
+    - family-names: Nguyen
+      given-names: Phuong T.
+      affiliation: "University of L'Aquila"
+      email: phuong.nguyen@univaq.it
+  title: "Simplicity by Obfuscation: Evaluating LLM-Driven Code Transformation with Semantic Elasticity"
+  collection-title: "Proceedings of the 29th International Conference on Evaluation and Assessment in Software Engineering"
+  year: 2025
+  month: 6
+  publisher:
+    name: "ACM"
+  conference:
+    name: "EASE 2025"
+    city: "Istanbul"
+    country: "Turkey"
+    date-start: "2025-06-17"
+    date-end: "2025-06-20"

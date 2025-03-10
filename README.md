@@ -127,39 +127,38 @@ Higher values indicate more effective transformations that maintain functionalit
 
 ## Dataset
 
-| Function Name | Category | Description | Algorithmic Pattern |
-|---------------|----------|-------------|---------------------|
-| factorial | Mathematical | Calculate factorial recursively | Recursive |
-| fibonacci | Mathematical | Calculate Fibonacci number | Recursive with overlapping subproblems |
-| is_prime | Mathematical | Check if number is prime | Conditional logic |
-| gcd | Mathematical | Find greatest common divisor | Euclidean algorithm |
-| lcm | Mathematical | Find least common multiple | Mathematical calculation |
-| power | Mathematical | Calculate power recursively | Recursive exponentiation |
-| sqrt_newton | Mathematical | Calculate square root | Newton's method |
-| bubble_sort | Sorting/Searching | Sort array using bubble sort | Nested iterations |
-| binary_search | Sorting/Searching | Search in sorted array | Divide-and-conquer |
-| merge_sort | Sorting/Searching | Sort using merge sort | Divide-and-conquer with recursion |
-| quick_sort | Sorting/Searching | Sort using quick sort | Partition-based sorting |
-| insertion_sort | Sorting/Searching | Sort using insertion | Iterative insertion |
-| linear_search | Sorting/Searching | Search in unsorted array | Simple iteration |
-| str_reverse | String Manipulation | Reverse a string | Simple string manipulation |
-| is_palindrome | String Manipulation | Check if string is palindrome | String testing |
-| word_count | String Manipulation | Count words in text | Basic text processing |
-| longest_common_substring | String Manipulation | Find common substring | Dynamic programming |
-| levenshtein_distance | String Manipulation | Calculate edit distance | Edit distance algorithm |
-| count_vowels | String Manipulation | Count vowels in string | Character filtering |
-| flatten_list | Data Structure | Flatten nested list | Recursive list transformation |
-| list_permutations | Data Structure | Generate all permutations | Combinatorial algorithm |
-| dict_merge | Data Structure | Merge dictionaries recursively | Nested structure merging |
-| remove_duplicates | Data Structure | Remove duplicates from list | Set operations |
-| rotate_array | Data Structure | Rotate array elements | Array manipulation |
-| tower_of_hanoi | Recursive | Solve Tower of Hanoi puzzle | Classic recursion problem |
-| binary_tree_depth | Recursive | Find max depth of binary tree | Tree traversal |
-| flood_fill | Recursive | Perform flood fill on image | Graph traversal |
-| knapsack | Recursive | Solve knapsack problem | Optimization problem |
-| edit_distance | Recursive | Calculate edit distance | String comparison |
-| coin_change | Recursive | Find minimum coins for amount | Dynamic programming |
-
+| Function Name | Category | Description | Algorithmic Pattern | Complexity | Uses Recursion | Parameters |
+|---------------|----------|-------------|---------------------|------------|----------------|------------|
+| factorial | Mathematical | Calculate factorial recursively | Recursive | O(n) | Yes | 1 |
+| fibonacci | Mathematical | Calculate Fibonacci number | Recursive with overlapping subproblems | O(2ⁿ) | Yes | 1 |
+| is_prime | Mathematical | Check if number is prime | Conditional logic | O(√n) | No | 1 |
+| gcd | Mathematical | Find greatest common divisor | Euclidean algorithm | O(log(min(a,b))) | Yes | 2 |
+| lcm | Mathematical | Find least common multiple | Mathematical calculation | O(log(min(a,b))) | Yes (via gcd) | 2 |
+| power | Mathematical | Calculate power recursively | Recursive exponentiation | O(log n) | Yes | 2 |
+| sqrt_newton | Mathematical | Calculate square root | Newton's method | O(log n) | No | 2 |
+| bubble_sort | Sorting/Searching | Sort array using bubble sort | Nested iterations | O(n²) | No | 1 |
+| binary_search | Sorting/Searching | Search in sorted array | Divide-and-conquer | O(log n) | No | 2 |
+| merge_sort | Sorting/Searching | Sort using merge sort | Divide-and-conquer with recursion | O(n log n) | Yes | 1 |
+| quick_sort | Sorting/Searching | Sort using quick sort | Partition-based sorting | O(n log n) avg, O(n²) worst | Yes | 1 |
+| insertion_sort | Sorting/Searching | Sort using insertion | Iterative insertion | O(n²) | No | 1 |
+| linear_search | Sorting/Searching | Search in unsorted array | Simple iteration | O(n) | No | 2 |
+| str_reverse | String Manipulation | Reverse a string | Simple string manipulation | O(n) | No | 1 |
+| is_palindrome | String Manipulation | Check if string is palindrome | String testing | O(n) | No | 1 |
+| word_count | String Manipulation | Count words in text | Basic text processing | O(n) | No | 1 |
+| longest_common_substring | String Manipulation | Find common substring | Dynamic programming | O(m×n) | No | 2 |
+| levenshtein_distance | String Manipulation | Calculate edit distance | Edit distance algorithm | O(m×n) | No | 2 |
+| count_vowels | String Manipulation | Count vowels in string | Character filtering | O(n) | No | 1 |
+| flatten_list | Data Structure | Flatten nested list | Recursive list transformation | O(n) | Yes | 1 |
+| list_permutations | Data Structure | Generate all permutations | Combinatorial algorithm | O(n!) | Yes | 1 |
+| dict_merge | Data Structure | Merge dictionaries recursively | Nested structure merging | O(n+m) | Yes | 2 |
+| remove_duplicates | Data Structure | Remove duplicates from list | Set operations | O(n) | No | 1 |
+| rotate_array | Data Structure | Rotate array elements | Array manipulation | O(n) | No | 2 |
+| tower_of_hanoi | Recursive | Solve Tower of Hanoi puzzle | Classic recursion problem | O(2ⁿ) | Yes | 1 |
+| binary_tree_depth | Recursive | Find max depth of binary tree | Tree traversal | O(n) | Yes | 1 |
+| flood_fill | Recursive | Perform flood fill on image | Graph traversal | O(n) | Yes | 4 |
+| knapsack | Recursive | Solve knapsack problem | Optimization problem | O(n×W) | Yes | 3 |
+| edit_distance | Recursive | Calculate edit distance | String comparison | O(m×n) | No | 2 |
+| coin_change | Recursive | Find minimum coins for amount | Dynamic programming | O(n×amount) | No | 2 |
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

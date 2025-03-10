@@ -125,7 +125,40 @@ Where:
 
 Higher values indicate more effective transformations that maintain functionality while significantly changing code structure.
 
+## Dataset
 
+| Function Name | Category | Description | Algorithmic Pattern |
+|---------------|----------|-------------|---------------------|
+| factorial | Mathematical | Calculate factorial recursively | Recursive |
+| fibonacci | Mathematical | Calculate Fibonacci number | Recursive with overlapping subproblems |
+| is_prime | Mathematical | Check if number is prime | Conditional logic |
+| gcd | Mathematical | Find greatest common divisor | Euclidean algorithm |
+| lcm | Mathematical | Find least common multiple | Mathematical calculation |
+| power | Mathematical | Calculate power recursively | Recursive exponentiation |
+| sqrt_newton | Mathematical | Calculate square root | Newton's method |
+| bubble_sort | Sorting/Searching | Sort array using bubble sort | Nested iterations |
+| binary_search | Sorting/Searching | Search in sorted array | Divide-and-conquer |
+| merge_sort | Sorting/Searching | Sort using merge sort | Divide-and-conquer with recursion |
+| quick_sort | Sorting/Searching | Sort using quick sort | Partition-based sorting |
+| insertion_sort | Sorting/Searching | Sort using insertion | Iterative insertion |
+| linear_search | Sorting/Searching | Search in unsorted array | Simple iteration |
+| str_reverse | String Manipulation | Reverse a string | Simple string manipulation |
+| is_palindrome | String Manipulation | Check if string is palindrome | String testing |
+| word_count | String Manipulation | Count words in text | Basic text processing |
+| longest_common_substring | String Manipulation | Find common substring | Dynamic programming |
+| levenshtein_distance | String Manipulation | Calculate edit distance | Edit distance algorithm |
+| count_vowels | String Manipulation | Count vowels in string | Character filtering |
+| flatten_list | Data Structure | Flatten nested list | Recursive list transformation |
+| list_permutations | Data Structure | Generate all permutations | Combinatorial algorithm |
+| dict_merge | Data Structure | Merge dictionaries recursively | Nested structure merging |
+| remove_duplicates | Data Structure | Remove duplicates from list | Set operations |
+| rotate_array | Data Structure | Rotate array elements | Array manipulation |
+| tower_of_hanoi | Recursive | Solve Tower of Hanoi puzzle | Classic recursion problem |
+| binary_tree_depth | Recursive | Find max depth of binary tree | Tree traversal |
+| flood_fill | Recursive | Perform flood fill on image | Graph traversal |
+| knapsack | Recursive | Solve knapsack problem | Optimization problem |
+| edit_distance | Recursive | Calculate edit distance | String comparison |
+| coin_change | Recursive | Find minimum coins for amount | Dynamic programming |
 
 ## License
 

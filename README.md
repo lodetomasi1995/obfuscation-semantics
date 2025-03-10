@@ -125,19 +125,7 @@ Where:
 
 Higher values indicate more effective transformations that maintain functionality while significantly changing code structure.
 
-## Citation
 
-If you use this code in your research, please cite our paper:
-
-```bibtex
-@inproceedings{detomasi2025simplicity,
-  title={Simplicity by Obfuscation: Evaluating LLM-Driven Code Transformation with Semantic Elasticity},
-  author={De Tomasi, Lorenzo and Di Sipio, Claudio and Di Marco, Antinisca and Nguyen, Phuong T.},
-  booktitle={Proceedings of the 29th International Conference on Evaluation and Assessment in Software Engineering},
-  year={2025},
-  organization={ACM}
-}
-```
 
 ## License
 
